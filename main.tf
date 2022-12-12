@@ -9,7 +9,7 @@ module "lambda_function_existing_package_local" {
   create_package         = false
   local_existing_package = "../function-packge.zip"
   attach_cloudwatch_logs_policy = true
-  memory_size = 1024
+  memory_size = var.memory_size
   
 }
 
